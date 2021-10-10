@@ -1,6 +1,9 @@
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:voter_education/pages/district_details/tabs/challengers.dart';
+import 'package:voter_education/pages/district_details/tabs/district.dart';
+import 'package:voter_education/pages/district_details/tabs/incumbent.dart';
 import 'package:voter_education/pages/district_select/district_select.dart';
 import 'package:voter_education/services/district_data/details.dart';
 import 'package:voter_education/widgets/drawer.dart';
@@ -15,9 +18,9 @@ class DistrictDetails extends StatefulWidget {
 
 class _DistrictDetailState extends State<DistrictDetails> {
   static const List<Widget> tabs = [
-    Icon(Icons.photo),
-    Icon(Icons.photo),
-    Icon(Icons.view_list)
+    Text("Electorate"),
+    Text("Incumbent"),
+    Text("Challengers")
   ];
   bool loading = true;
 
@@ -54,7 +57,9 @@ class _DistrictDetailState extends State<DistrictDetails> {
             body: new Center(child: Consumer<DistrictDetailsModel>(
               builder: (context, model, child) {
                 return TabBarView(children: [
-                  // Text("Map here"),
+                  buildDistrictPage(context, model),
+                  buildIncumbentPage(context, model),
+                  buildChallengersPage(context, model)
                 ]);
               },
             )),

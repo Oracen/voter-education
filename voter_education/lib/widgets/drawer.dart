@@ -30,7 +30,7 @@ Drawer buildDrawer(BuildContext context, String currentRoute) {
         ),
         _buildMenuItem(
           context,
-          const Text('My Dashboard'),
+          const Text('My Voting Area'),
           DistrictSelect.route,
           currentRoute,
         ),
