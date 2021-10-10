@@ -27,7 +27,7 @@ samples, guidance on mobile development, and a full API reference.
 ### Emulator
 
 - Check devices are installed with `flutter emulators`. Manually start one with `flutter emulators --launch {name}`
-- Bring up the control console with `CTRL` - `SHIFT` - `P`. Start typing and select `Flutter: Select Device`
+- Bring up the control console with `CTRL`-`SHIFT`-`P`. Start typing and select `Flutter: Select Device`
 - Running the main debugger via `F5` should now run the emulated device
 
 ### On Android Device
