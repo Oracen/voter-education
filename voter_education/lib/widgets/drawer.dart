@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:voter_education/pages/region_select/region_select.dart';
+import 'package:voter_education/pages/district_select/district_select.dart';
 import 'package:voter_education/pages/settings_menu/settings_menu.dart';
 
 Widget _buildMenuItem(
@@ -31,7 +31,7 @@ Drawer buildDrawer(BuildContext context, String currentRoute) {
         _buildMenuItem(
           context,
           const Text('My Dashboard'),
-          RegionSelect.route,
+          DistrictSelect.route,
           currentRoute,
         ),
         SizedBox(height: 20),

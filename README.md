@@ -9,6 +9,12 @@ Run all files out of the `voter_education` subfolder.
 - Ensure flutter is installed. Use Android studio to account for the usual Google software BS
 - Run `flutter pub get` to build packages
 
+### Important note for JSON interfaces
+
+We're currently using the `json_annotations` package to handle JSON serialisation. This requires a bunch of macro runnners to automatically produce the serialization methods. To run this functionality, the command is `flutter packages pub run build_runner build`.
+
+See https://github.com/google/json_serializable.dart/tree/master/example for more details
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

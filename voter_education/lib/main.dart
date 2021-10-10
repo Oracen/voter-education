@@ -1,9 +1,20 @@
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-import 'package:voter_education/pages/region_select/region_select.dart';
+import 'package:voter_education/pages/district_details/district_details.dart';
+
+import 'package:voter_education/pages/district_select/district_select.dart';
 import 'package:voter_education/pages/settings_menu/settings_menu.dart';
+import 'package:voter_education/services/district_data/details.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => DistrictDetailsModel()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,10 +26,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RegionSelect(),
+      home: DistrictSelect(),
       routes: <String, WidgetBuilder>{
-        RegionSelect.route: (context) => RegionSelect(),
+        DistrictSelect.route: (context) => DistrictSelect(),
         SettingsMenu.route: (context) => SettingsMenu(),
+        DistrictDetails.route: (context) => DistrictDetails(),
       },
     );
   }

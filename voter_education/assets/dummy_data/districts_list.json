@@ -2,19 +2,19 @@
   "districts": [
     {
       "name": "Alpha",
-      "id": 0,
+      "id": "0",
       "region": "Big",
       "postcode": 2905
     },
     {
       "name": "Beta",
-      "id": 1,
+      "id": "1",
       "region": "Small",
       "postcode": 4067
     },
     {
       "name": "Delta",
-      "id": 1,
+      "id": "2",
       "region": "Small",
       "postcode": 4067
     }

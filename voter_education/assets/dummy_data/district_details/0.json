@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "id": "0",
+    "name": "Alpha",
+    "region": "Big",
+    "electoralGroup": "Federal",
+    "control": ["0", "1", "0", "0"]
+  },
+  "incumbent": {
+    "id": "0",
+    "name": "Big Bad Bob",
+    "timeInOffice": 12,
+    "partyId": "0"
+  },
+  "challengers": {
+    "list": []
+  },
+  "party": {
+    "id": "0",
+    "members": 37
+  }
+}

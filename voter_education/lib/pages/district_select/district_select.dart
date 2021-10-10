@@ -3,14 +3,14 @@ import 'package:flutter/widgets.dart';
 import 'package:voter_education/widgets/drawer.dart';
 import 'package:voter_education/widgets/inputs/autocomplete_districts.dart';
 
-class RegionSelect extends StatelessWidget {
+class DistrictSelect extends StatelessWidget {
   static const String title = "Region Select";
   static const String route = '/region';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(RegionSelect.title)),
+      appBar: AppBar(title: Text(DistrictSelect.title)),
       drawer: buildDrawer(context, route),
       body: Padding(
         padding: EdgeInsets.all(8.0),
@@ -21,7 +21,7 @@ class RegionSelect extends StatelessWidget {
                 child:
                     Text("Please enter your electoral district or postcode")),
             Padding(
-                padding: EdgeInsets.all(20.0), child: AutocompleteDistricts())
+                padding: EdgeInsets.all(20.0), child: AutocompleteDistricts()),
           ],
         ),
       ),
