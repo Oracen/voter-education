@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:voter_education/pages/district_select/district_select.dart';
+import 'package:voter_education/pages/get_involved/get_involved.dart';
+import 'package:voter_education/pages/home_page/home_page.dart';
+import 'package:voter_education/pages/poll_landing/poll_landing.dart';
 import 'package:voter_education/pages/settings_menu/settings_menu.dart';
 
 Widget _buildMenuItem(
@@ -30,8 +33,26 @@ Drawer buildDrawer(BuildContext context, String currentRoute) {
         ),
         _buildMenuItem(
           context,
+          const Text('Home'),
+          HomePage.route,
+          currentRoute,
+        ),
+        _buildMenuItem(
+          context,
           const Text('My Voting Area'),
           DistrictSelect.route,
+          currentRoute,
+        ),
+        _buildMenuItem(
+          context,
+          const Text('Polling Tool'),
+          PollLanding.route,
+          currentRoute,
+        ),
+        _buildMenuItem(
+          context,
+          const Text('Get Involved'),
+          GetInvolved.route,
           currentRoute,
         ),
         SizedBox(height: 20),

@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:voter_education/pages/district_details/district_details.dart';
 
 import 'package:voter_education/pages/district_select/district_select.dart';
+import 'package:voter_education/pages/get_involved/get_involved.dart';
+import 'package:voter_education/pages/home_page/home_page.dart';
+import 'package:voter_education/pages/poll_landing/poll_landing.dart';
 import 'package:voter_education/pages/settings_menu/settings_menu.dart';
 import 'package:voter_education/services/district_data/details.dart';
 
@@ -26,11 +29,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DistrictSelect(),
+      home: HomePage(),
       routes: <String, WidgetBuilder>{
+        HomePage.route: (context) => HomePage(),
         DistrictSelect.route: (context) => DistrictSelect(),
         SettingsMenu.route: (context) => SettingsMenu(),
         DistrictDetails.route: (context) => DistrictDetails(),
+        PollLanding.route: (context) => PollLanding(),
+        GetInvolved.route: (context) => GetInvolved(),
       },
     );
   }

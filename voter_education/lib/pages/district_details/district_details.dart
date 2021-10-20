@@ -4,7 +4,6 @@ import 'package:flutter/widgets.dart';
 import 'package:voter_education/pages/district_details/tabs/challengers.dart';
 import 'package:voter_education/pages/district_details/tabs/district.dart';
 import 'package:voter_education/pages/district_details/tabs/incumbent.dart';
-import 'package:voter_education/pages/district_select/district_select.dart';
 import 'package:voter_education/services/district_data/details.dart';
 import 'package:voter_education/widgets/drawer.dart';
 
@@ -53,7 +52,7 @@ class _DistrictDetailState extends State<DistrictDetails> {
                 tabs: tabs,
               ),
             ),
-            drawer: buildDrawer(context, DistrictSelect.route),
+            drawer: buildDrawer(context, DistrictDetails.route),
             body: new Center(child: Consumer<DistrictDetailsModel>(
               builder: (context, model, child) {
                 return TabBarView(children: [
