@@ -1,11 +1,16 @@
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:voter_education/interfaces/details/district_compare_interface.dart';
 import 'package:voter_education/pages/district_details/tabs/challengers.dart';
 import 'package:voter_education/pages/district_details/tabs/district.dart';
 import 'package:voter_education/pages/district_details/tabs/incumbent.dart';
 import 'package:voter_education/services/district_data/details.dart';
 import 'package:voter_education/widgets/drawer.dart';
+
+void goToDistrictDetails(BuildContext context, DistrictStatToMap args) {
+  Navigator.pushReplacementNamed(context, "/detail/compare", arguments: args);
+}
 
 class DistrictDetails extends StatefulWidget {
   final String title = "Region Select";

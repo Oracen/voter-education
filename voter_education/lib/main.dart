@@ -1,5 +1,6 @@
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
+import 'package:voter_education/pages/district_compare/district_compare.dart';
 import 'package:voter_education/pages/district_details/district_details.dart';
 
 import 'package:voter_education/pages/district_select/district_select.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         DistrictDetails.route: (context) => DistrictDetails(),
         PollLanding.route: (context) => PollLanding(),
         GetInvolved.route: (context) => GetInvolved(),
+        DistrictCompare.route: (context) => DistrictCompare()
       },
     );
   }
