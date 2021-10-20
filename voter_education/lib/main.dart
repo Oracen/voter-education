@@ -6,6 +6,8 @@ import 'package:voter_education/pages/district_details/district_details.dart';
 import 'package:voter_education/pages/district_select/district_select.dart';
 import 'package:voter_education/pages/get_involved/get_involved.dart';
 import 'package:voter_education/pages/home_page/home_page.dart';
+import 'package:voter_education/pages/poll_education/poll_education.dart';
+import 'package:voter_education/pages/poll_interactive/poll_interactive.dart';
 import 'package:voter_education/pages/poll_landing/poll_landing.dart';
 import 'package:voter_education/pages/settings_menu/settings_menu.dart';
 import 'package:voter_education/services/district_data/details.dart';
@@ -38,7 +40,9 @@ class MyApp extends StatelessWidget {
         DistrictDetails.route: (context) => DistrictDetails(),
         PollLanding.route: (context) => PollLanding(),
         GetInvolved.route: (context) => GetInvolved(),
-        DistrictCompare.route: (context) => DistrictCompare()
+        DistrictCompare.route: (context) => DistrictCompare(),
+        PollInteractive.route: (context) => PollInteractive(),
+        PollEducation.route: (context) => PollEducation()
       },
     );
   }
