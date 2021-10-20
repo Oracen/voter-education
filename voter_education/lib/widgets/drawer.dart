@@ -30,7 +30,25 @@ Drawer buildDrawer(BuildContext context, String currentRoute) {
         ),
         _buildMenuItem(
           context,
+          const Text('Home'),
+          DistrictSelect.route,
+          currentRoute,
+        ),
+        _buildMenuItem(
+          context,
           const Text('My Voting Area'),
+          DistrictSelect.route,
+          currentRoute,
+        ),
+        _buildMenuItem(
+          context,
+          const Text('Polling Tool'),
+          DistrictSelect.route,
+          currentRoute,
+        ),
+        _buildMenuItem(
+          context,
+          const Text('Get Involved'),
           DistrictSelect.route,
           currentRoute,
         ),

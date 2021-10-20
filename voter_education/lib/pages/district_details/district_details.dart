@@ -53,7 +53,7 @@ class _DistrictDetailState extends State<DistrictDetails> {
                 tabs: tabs,
               ),
             ),
-            drawer: buildDrawer(context, DistrictSelect.route),
+            drawer: buildDrawer(context, DistrictDetails.route),
             body: new Center(child: Consumer<DistrictDetailsModel>(
               builder: (context, model, child) {
                 return TabBarView(children: [
